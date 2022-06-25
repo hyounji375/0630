@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+section,
+footer {
+  width: 100%;
+}
+body {
+  font: 12px Roboto, Nanum Gothic, Arial, verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(./img/배경.png);
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+}
+#header_top {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  width: 130px;
+  height: 132px;
+  margin-top: 10px;
+  background-image: url(./img/로고.png);
+  background-size: cover;
+}
+#search {
+  width: 40px;
+  height: 40px;
+  background-image: url(./img/search.png);
+  background-size: cover;
+  position: absolute;
+  right: 170px;
+  top: 65px;
+}
+#bar ul {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: black;
+}
+#bar a {
+  color: white;
+  margin: 0 8rem;
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+#hidemenu {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  height: 0;
+}
+#hidemenu > ul {
+  margin: 8px 8rem;
+}
+#hidemenu > ul > li {
+  text-align: center;
+}
+#hidemenu a {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+#bar:hover + #hidemenu {
+  height: fit-content;
+}
+
+section {
+  position: relative;
+  margin: 250px 0 50px 0;
+  left: 25%;
+  display: flex;
+}
+/*#img {
+  width: 25%;
+  overflow: hidden;
+  background-image: url(./이미지/custom/배경.png);
+  background-size: cover;
+  background-position: center;
+}*/
+#wrap {
+  width: 75%;
+}
+#wrap div {
+  margin: 20px 30px 50px;
+}
+#title {
+  font-size: 30px;
+  font-weight: bold;
+}
+span {
+  font-weight: 700;
+  font-size: 20px;
+}
+p {
+  font-weight: 600;
+}
+#base {
+  line-height: 40px;
+  font-size: 16px;
+}
+#base > ul {
+  display: flex;
+}
+#base > ul > li {
+  margin: 5px 10px 0;
+}
+#base hr {
+  margin-bottom: 10px;
+}
+#topping {
+  line-height: 40px;
+  font-size: 16px;
+}
+#topping > ul {
+  display: flex;
+}
+#topping > ul > li {
+  margin: 5px 15px 0;
+  width: 300px;
+  height: 30px;
+}
+#dreesing {
+  line-height: 40px;
+  font-size: 16px;
+}
+#dreesing hr {
+  margin-bottom: 10px;
+}
+#dreesing > ul {
+  display: flex;
+}
+#dreesing > ul > li {
+  margin: 5px 15px 0;
+  width: 500px;
+  height: 30px;
+}
+#oil {
+  width: 100%;
+}
+.none {
+  visibility: hidden;
+}
+input[type="radio"] {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
+input[type="checkbox"] {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
+#sum {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 800;
+}
+input[type="text"] {
+  border: none;
+  width: 80px;
+  font-size: 25px;
+  text-align: center;
+}
+#insta {
+  width: 50px;
+  height: 50px;
+  background-image: url("./img/인스타전.png");
+  background-size: cover;
+  position: fixed;
+  right: 60px;
+  bottom: 55px;
+  cursor: pointer;
+}
+#insta:hover {
+  background-image: url("./img/인스타후.png");
+}
+#footer {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  line-height: 18px;
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+#footer2 {
+  display: flex;
+  justify-content: center;
+}
+#footer4 {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+}
+#footer span {
+  font-size: 8px;
+  margin: 0 5px;
+}
