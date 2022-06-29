@@ -30,13 +30,13 @@ a {
   text-decoration: none;
   color: black;
 }
-#slide_wrap {
+.swiper-wrapper {
   width: 100%;
   height: 100vh;
   overflow: auto;
   scroll-snap-type: y mandatory;
 }
-#slide_wrap .page {
+.swiper-wrapper .swiper-slide {
   scroll-snap-align: center;
   width: 100%;
   height: 100%;
@@ -47,7 +47,7 @@ a {
   letter-spacing: 8px;
   font-weight: 600;
 }
-.page > div {
+.swiper-slide > div {
   height: 300px;
   display: inline-block;
   line-height: 300px;
@@ -61,30 +61,34 @@ a {
   text-align: center;
   line-height: 100vh;
 }
-#slide_wrap > div:nth-child(1) {
+.swiper-wrapper > div:nth-child(1) {
   background-image: url(../img/main01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-[data-aos^="fade"][data-aos^="fade"].aos-animate {
-  opacity: 1;
-  transform: translateZ(0);
-}
-#slide_wrap > div:nth-child(2) {
+.swiper-wrapper > div:nth-child(2) {
   background-image: url(../img/mainbn02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-#slide_wrap > div:nth-child(3) {
+.swiper-wrapper > div:nth-child(3) {
   background-image: url(../img/mainbn03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-#slide_wrap > div:nth-child(4) {
+.swiper-wrapper > div:nth-child(4) {
   background-image: url(../img/mainbn04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+  position: fixed;
+  margin-right: 100px;
 }
 #logo_wrap {
   width: 190px;

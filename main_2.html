@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./main_2.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- link Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="logo_wrap">
@@ -53,57 +59,59 @@
         </ul>
       </div>
     </div>
-    <div id="slide_wrap">
-      <div id="slide1" class="page">
-        <div class="slideText1">1</div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide01" pageNum="1">
+          <div class="slideText1">1</div>
+        </div>
+        <div class="swiper-slide slide02" pageNum="2">
+          <div class="slideText2">2</div>
+        </div>
+        <div class="swiper-slide slide03" pageNum="3">
+          <div class="slideText3">3</div>
+        </div>
+        <div class="swiper-slide slide04" pageNum="4">
+          <div class="slideText4">4</div>
+        </div>
+        <footer class="bottom" id="footer" style="height: 20%">
+          <ul id="footer2">
+            <li>
+              <span>COMPANY</span>
+              &nbsp;IT SALAD
+            </li>
+            <li>
+              <span>OWNER</span>
+              &nbsp;SONG.J.H
+            </li>
+            <li>
+              <span>E-mail</span>
+              &nbsp;aa4281@naver.com
+            </li>
+            <li>
+              <span>CALL</span>
+              &nbsp;Seongsu: 070.8118.1751&nbsp;|&nbsp;yongsan: 02.2012.1751
+            </li>
+          </ul>
+          <ul id="footer3">
+            <li>
+              <span>BUSINESS LICENSE</span>
+              Seongsu: 142-85-26752&nbsp;|&nbsp;yongsan: 478-85-01330
+            </li>
+          </ul>
+          <ul id="footer4">
+            <li>
+              <span>ADDRESS</span>
+              Seongsu: 28, Seongsuil-ro 8-hil, Seongdong-gu, Seoul, Republic of
+              Korea | Yongsan: 7F, 55, Hangang-daero 23-gil, Yongsan-gu, Seoul,
+              Republic of Korea
+            </li>
+          </ul>
+          <p>
+            Copyright ITSALAD ALL right reserve / design by MOSEN / Hosting by
+            EAFE24 / Agreement / 개인정보취급방침 / Guide
+          </p>
+        </footer>
       </div>
-      <div id="slide2" class="page">
-        <div class="slideText2">2</div>
-      </div>
-      <div id="slide3" class="page">
-        <div class="slideText3">3</div>
-      </div>
-      <div id="slide4" class="page">
-        <div class="slideText4">4</div>
-      </div>
-      <footer class="bottom" id="footer" style="height: 20%">
-        <ul id="footer2">
-          <li>
-            <span>COMPANY</span>
-            &nbsp;IT SALAD
-          </li>
-          <li>
-            <span>OWNER</span>
-            &nbsp;SONG.J.H
-          </li>
-          <li>
-            <span>E-mail</span>
-            &nbsp;aa4281@naver.com
-          </li>
-          <li>
-            <span>CALL</span>
-            &nbsp;Seongsu: 070.8118.1751&nbsp;|&nbsp;yongsan: 02.2012.1751
-          </li>
-        </ul>
-        <ul id="footer3">
-          <li>
-            <span>BUSINESS LICENSE</span>
-            Seongsu: 142-85-26752&nbsp;|&nbsp;yongsan: 478-85-01330
-          </li>
-        </ul>
-        <ul id="footer4">
-          <li>
-            <span>ADDRESS</span>
-            Seongsu: 28, Seongsuil-ro 8-hil, Seongdong-gu, Seoul, Republic of
-            Korea | Yongsan: 7F, 55, Hangang-daero 23-gil, Yongsan-gu, Seoul,
-            Republic of Korea
-          </li>
-        </ul>
-        <p>
-          Copyright ITSALAD ALL right reserve / design by MOSEN / Hosting by
-          EAFE24 / Agreement / 개인정보취급방침 / Guide
-        </p>
-      </footer>
     </div>
     <div id="Btn">
       <div id="prev">
@@ -118,6 +126,12 @@
 
     <script>
       AOS.init();
+    </script>
+    <script src="../js/sticker.min.js"></script>
+    <script>
+      window.onload = function () {
+        Sticker.init(".sticker");
+      };
     </script>
   </body>
 </html>

@@ -30,21 +30,3 @@ click3.addEventListener("click", () => {
     submenu3.classList.add("on");
   }
 });
-
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
-const page = document.getElementsByClassName("page");
-let btn_cnt = 0;
-
-prev.addEventListener("click", () => {
-  if (btn_cnt > 0) {
-    btn_cnt--;
-    window.scrollBy(0, -window.innerHeight);
-  }
-});
-next.addEventListener("click", () => {
-  if (btn_cnt < page.length - 1) {
-    btn_cnt++;
-    window.scrollBy(0, window.innerHeight);
-  }
-});
